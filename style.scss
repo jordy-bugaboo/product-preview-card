@@ -1,0 +1,130 @@
+$color-darkCyan:  hsl(158, 36%, 37%);
+$color-cream: hsl(30, 38%, 92%);
+$color-veryDarkBlue: hsl(212, 21%, 14%);
+$color-darkGreyishBlue:  hsl(228, 12%, 48%);
+$color-white: hsl(0, 0%, 100%);
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 0.9375rem;
+
+}
+
+body {
+    background: $color-cream;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 5%;
+}
+
+h1 {
+    font-family: "Fraunces", sans-serif;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    max-width: 200px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $color-darkGreyishBlue;
+    font-weight: 500;
+}
+
+picture { 
+    flex: 1;
+}
+
+
+.c-product {
+    background-color: $color-white;
+    border-radius: 15px;
+    flex-direction: column;
+    max-width: 700px;
+
+    @media only screen and (min-width: 700px) {
+       flex-direction: row;
+    }
+}
+
+.c-product-content {
+    margin: 5%;
+    flex: 1;
+    .product--pretitle {
+        color: $color-darkGreyishBlue;
+        letter-spacing: 0.2em;
+        font-weight: 500;
+    }
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 100%;
+
+    @media only screen and (min-width: 700px) {
+        border-radius: 15px 0 0 15px;
+    }
+}
+
+.c-price {
+    gap: 5%;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    
+    .price-promo {
+        font-size:xx-large;
+        font-family: "Fraunces", sans-serif;
+        color: $color-darkCyan;
+    }
+
+    .price-original {
+        align-self: center;
+        text-decoration: line-through;
+        color: $color-darkGreyishBlue;
+        font-size: smaller;
+    }
+}
+
+
+button {
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    background-color: $color-darkCyan;
+    color: $color-white;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.u-flex { 
+    display: flex;
+}
+
+.u-flex-column { 
+    flex-direction: column;
+}
+
+.u-margin-top {
+    margin-top: 8px;
+}
