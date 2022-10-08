@@ -103,18 +103,24 @@ img {
 
 
 button {
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 50px;
-    background-color: $color-darkCyan;
-    color: $color-white;
-    gap: 5%;
-    justify-content: center;
     align-items: center;
+    background-color: $color-darkCyan;
+    border-radius: 10px;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
     font-weight: bold;
+    gap: 5%;
+    height: 50px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    width: 100%;
+
+    &:hover {
+        background-color: $color-veryDarkBlue;
+
+    }
 }
 
 .u-flex { 
